@@ -24,7 +24,7 @@ This project is a web-based application developed as part of the **CM1605 Web Te
 - Integrated **font size adjustment** features.
 
 ### Student 4: Umar
-- Developed the **listing page** displaying AI-generated recommendations.
+- Developed the **listing page** to display recommendations.
 - Created a **subscription form** for personalized newsletters with JavaScript validation.
 - Implemented JavaScript features for **background and text color customization**.
 - Integrated XML data reading and display in the **listing page**.
