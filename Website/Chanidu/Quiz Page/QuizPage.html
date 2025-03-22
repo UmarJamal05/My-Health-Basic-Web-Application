@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href = "QuizPageStyle.css" rel  = "stylesheet">	
+		<title>Quiz Page</title>
+		
+		<style>
+			.quiz a:link{
+				background-color: #4B6A96;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class = "pageTop">
+				<figure style = "margin: 0;">
+					<img src = "../../images/Logo.jpg" alt = "Page logo">
+				</figure>
+				<h1>My Health</h1>
+			</div>
+			<nav class = "navbar">
+				<ul>
+					<li class = "home"><a href = "../HomePage/HomePage.html">Home</a></li>
+					<li class = "gallery"><a href = "../../Mevinu/Gallery/Gallery.html">Gallery</a></li>
+					<li class = "shop"><a href = "../../Osal/Shop/Shop.html">Shop</a></li>
+					<li class = "comments"><a href = "../CommentsPage/Feedback.html" >Comments</a></li>
+					<li class = "quiz"><a href ="#Quiz">Quiz</a></li>
+					<li class = "reviews"><a href = "../../Umar/Review Page/ReviewPage.html">Reviews</a></li>
+					<li class = "aboutUs"><a href = "../../Osal/About Us/AboutUs.html">About Us</a></li>
+					<li class = "signUp" style = "float:right;"><a href = "../../Mevinu/SignUp/Signup.html">Sign Up</a></li>
+				</ul>
+			</nav>
+		</header>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h1 style = "text-align: center;">Press the button to start the quiz.</h1>
+		<div class = "button">
+			<button type="button" id = "button" >Click Me!</button>
+		</div>
+		<br>
+		<br>
+		<h1 style = "text-align: center;">Quiz Summary</h1>
+		<div class = "summary">
+			<div class = "questions">
+				<h1>Question 1</h1>
+				<h1>Question 2</h1>
+				<h1>Question 3</h1>
+				<h1>Question 4</h1>
+				<h1>Question 5</h1>	
+			</div>
+			<div class = "points">
+				<p id = "score1">......</p>
+				<p id = "score2">......</p>
+				<p id = "score3">......</p>
+				<p id = "score4">......</p>
+				<p id = "score5">......</p>
+			</div>
+		</div>
+		<div class = "total">
+			<h1 id = "totalScore">Total Score = ......</h1>
+			<p id = "message"></p>
+		</div>
+		
+		<a id = "editor" href = "../Chanidu Page editor/PageEditor.html" target = "_blank">Page editor</a>
+		<br>
+		<footer>	
+			<br>
+			<div class = "detail1">
+				<h2>Who we are</h2>
+				<p>About</p>
+				<p>Team</p>
+			</div>
+			<div class = "detail2">
+				<h2>Support</h2>
+				<p>Contact Us</p>
+			</div>
+			<div class = "detail3">
+				<h2>Community</h2>
+				<p>Ideas</p>
+			</div>
+			
+			<p style = "text-align: center;">&copy; 2024 MyHealth.com. All rights reserved.</p>
+		</footer>
+		
+		<script src = "QuizPageJS.js"></script>
+
+	</body>
+</html>

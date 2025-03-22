@@ -1,0 +1,218 @@
+body{
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+	margin-bottom: 1%;
+}
+
+.navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #3A5274;
+			  
+}
+
+.navbar li {
+	float: left;
+}
+
+.navbar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 32px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+li a:link{
+	 background-color: #3A5274;
+}
+
+li a:hover {
+	background-color: #4B6A96;
+}
+
+.pageTop h1{
+	height: 75px;
+	font-size: 55px;
+	color: #3A5274;
+	margin: 0;
+	
+}
+
+.pageTop{
+	background-color: white;
+	margin: 0;	
+}
+
+.pageTop img{
+	float: left;
+	width: 70px;
+	height: 70px;				
+	margin: 0;
+	vertical-align: top;
+}
+
+
+#theme{
+	margin: auto;
+	width: 800px;
+	height: 50px;
+	border-radius : 9px;
+}
+
+#querydetail{
+	margin: auto;
+	width: 800px;
+	height: 100px;
+	border-radius : 9px;
+	text-align: left;
+	resize: none;
+}
+
+.formtop h1, p{
+	margin: 0;
+}
+
+#fName, #lName, #email{
+	width: 400px;
+	height: 40px;
+	border-radius : 9px;
+}
+
+
+.fullpage{
+	color: white;
+	border-radius: 5%;
+	background-color: #3a5274;
+	width: 1000px;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.fullpage input, textarea, select{
+	background-color: white;
+	font-size: 14px;
+}
+
+.buttons{
+	display: flex;
+    justify-content: space-between;
+}
+
+.buttons button{
+	width: 70px;
+	height:40px;
+	border-radius: 9px;
+	margin: auto;
+	border: 0;
+	outline: none;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.detail1{
+	text-align: center;
+	width: 33.3%;
+	height: 150px;
+	float:left;
+}
+
+.detail2{
+	text-align: center;
+	width: 33.3%;
+	height: 150px;
+	float:right;
+}
+
+.detail3{
+	text-align: center;
+	width: 33.3%;
+	height: 150px;
+	float:right;
+}
+	
+footer{
+	height: 220px;
+	width: 100%;
+	background-color: #3a5274;
+	color: white;
+	margin: 0;
+}
+
+.summary{
+	height: 650px;
+}
+
+.questions{
+	float: left;
+	width: 35%;
+}
+
+.questions h1{
+	padding: 30px;
+	text-align: center;
+}
+
+.points{
+	text-align: center;
+	float: right;
+	width: 35%;	
+}
+
+.points p{
+	padding: 45px;
+	font-size: 25px;
+}
+
+.total{
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.button{
+	width: 140px;
+	margin: auto;
+}
+
+.button button{
+	margin: auto;
+	background-color: #3A5274;
+	border: solid white;
+    color: white;
+	padding: 15px 16px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	border-radius: 30px;
+}
+
+
+.button button:hover {
+	background-color: #4B6A96;
+}
+
+.button button:active{
+	border: solid #0A0C4F;
+}
+
+
+
+
+#editor{
+	text-decoration: none;
+	color: #4B6A96;
+	float: left;
+	margin-left: 10px;
+}

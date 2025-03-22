@@ -1,0 +1,64 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+			color: white;
+        }
+		
+        header, main, footer {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+		
+		header{
+		    text-align: center;
+		}	
+		
+		h3{
+			text-align: center;
+		}
+		
+        footer {
+            text-align: center;
+            clear: both; 
+            margin-top: 20px; 
+        }
+		
+        .editor-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+		
+        .editor-details img {
+            max-width: 100%;
+            height: auto;
+            max-height: 200px; 
+        }
+		
+        .editor-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+		
+		.tasks{
+		
+		}
+		
+        .task-list {
+            list-style-type: none;
+            padding: 0;
+        }
+		
+        .task-list li {
+            margin-bottom: 10px;
+        }
+		
+		main, header{
+			background-color: #3A5274;
+			width: 60%;
+			margin-left: 20%;
+		}

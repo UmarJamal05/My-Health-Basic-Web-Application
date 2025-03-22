@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reviews [
+    <!ENTITY star "&#x2B50;">
+]>
+<reviews>
+    <review>
+        <profile_image>../../images/profile.jpg</profile_image>
+        <name>John</name>
+        <stars>&star;&star;&star;&star;&star;</stars>
+        <date>3 days ago</date>
+        <comment>A very helpful website. Viewing the necessary stuff was very easy. Thank you guys.</comment>
+    </review>
+    <review>
+        <profile_image>../../images/profile1.jpg</profile_image>
+        <name>Alex</name>
+        <stars>&star;&star;&star;&star;</stars>
+        <date>2 days ago</date>
+        <comment>100 times better than what I have used before. Would love if the creators can keep it up.</comment>
+    </review>
+    <review>
+        <profile_image>../../images/profile2.jpg</profile_image>
+        <name>Hanna</name>
+        <stars>&star;&star;&star;&star;&star;</stars>
+        <date>1 day ago</date>
+        <comment>Nothing different compared to other websites. But services are great. God bless yourll.</comment>
+    </review>
+</reviews>

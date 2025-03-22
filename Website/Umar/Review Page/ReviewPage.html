@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page</title>
+    <link href="ReviewPage.css" rel="stylesheet">
+	<style>
+			.reviews a:link{
+				background-color: #4B6A96;
+			}
+		</style>
+</head>
+<body>
+    <header>
+        <div class="pageTop">
+            <figure style="margin: 0;">
+                <img src="../../images/Logo.jpg" alt="Page logo">
+            </figure>
+            <h1>My Health</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li class = "home"><a href = "../../Chanidu/HomePage/HomePage.html">Home</a></li>
+				<li class = "gallery"><a href = "../../Mevinu/Gallery/Gallery.html">Gallery</a></li>
+				<li class = "shop"><a href = "../../Osal/Shop/Shop.html">Shop</a></li>
+				<li class = "comments"><a href = "../../Chanidu/CommentsPage/Feedback.html" >Comments</a></li>
+				<li class = "quiz"><a href ="../../Chanidu/Quiz Page/QuizPage.html">Quiz</a></li>
+				<li class = "reviews"><a href = "#reviews">Reviews</a></li>
+				<li class = "aboutUs"><a href = "../../Osal/About Us/AboutUs.html">About Us</a></li>
+				<li class = "signUp" style = "float:right;"><a href = "../../Mevinu/SignUp/Signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="page">
+        <h1 style="margin: 0; font-family: Arial, sans-serif">What do our users say?</h1>
+        <div id="dropdown">
+            <label for="background-color">Background Color : </label>
+            <select id="background-color">
+                <option value="pleaseSelect" disabled selected hidden>Select Color</option>
+                <option value="#87CEEB">Blue</option>
+                <option value="#FFDAB9">Peach</option>
+                <option value="#98FB98">Green</option>
+                <option value="#FFF0F5">Pink</option>
+                <option value="#FFEB3B">Yellow</option>
+            </select>
+            <label for="text-color">Text Color : </label>
+            <select id="text-color">
+                <option value="pleaseSelect" disabled selected hidden>Select Font Color</option>
+                <option value="#0000ff">Blue</option>
+                <option value="#a74f19">Brown</option>
+                <option value="#c720c4">Purple</option>
+                <option value="#2F4F4F">Gray</option>
+                <option value="#ff0303">Red</option>
+            </select>
+            &nbsp;<button id="reset-button">Reset</button>
+        </div>
+        <hr/>
+
+        <div id="reviews-container" class = "Section1"></div>
+
+        <div class="Section2">
+            <img src="../../images/emoji.jpg" alt="emoji">
+        </div>
+
+        <br/>
+
+        <div class="reviews">
+            <form>
+                <input type="text" name="review" placeholder="Write a Review" id="review" maxlength="200">
+                <input type="submit" value="Upload" id="submit">
+            </form>
+        </div>
+
+        <br/>
+        <br/>
+		<input id = "news"type="button" value="Subscribe to your personlized Newsletter!!!" onclick="openPopup()" class="custom-button">
+		
+	<div id = "overlay"></div>
+        <div class="newsletter">
+            <div id="popup" class="popup">
+                <form id="form1" class = "form1" name="subscribe" onsubmit="return validateSignIn();">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <h1>Subscribe for Personalized Newsletter</h1>
+                    <label for="Name">Name:</label>
+                    <input type="text" name="name" id="name" size="30" maxlength="100">
+                    <br/><br/>
+                    <label for="email">Email Address:</label>
+                    <input type="email" name="email" id="email">
+                    <br/><br/>
+                    <label for="contact">Contact Number:</label>
+                    <input type="contact" name="contact" id="contact">
+                    <br/><br/>
+                    <label for="address">Address:</label>
+                    <textarea name="address" id="address" cols="105"></textarea>
+                    <br/><br/>
+                    <input type="submit" value="Submit" class="button">
+                    <br/><br/>
+                    <input type="reset" value="Clear" class="button">
+                </form> 
+            </div>
+        </div>
+
+        <br/>
+        <br/>
+       
+
+    </div>
+	<a id = "editor" href = "../Umar Page editor/Editor'sPage.html" target = "_blank">Page editor</a>
+    <br>
+    <footer>
+        <br/>
+        <div class="detail1">
+            <h2>Who we are</h2>
+            <p>About</p>
+            <p>Team</p>
+        </div>
+        <div class="detail2">
+            <h2>Support</h2>
+            <p>Contact Us</p>
+        </div>
+        <div class="detail3">
+            <h2>Community</h2>
+            <p>Ideas</p>
+        </div>
+
+        <p style="text-align: center;">&copy; 2024 MyHealth.com. All rights reserved.</p>
+    </footer>
+    <script src="ReviewPage.js"></script>
+</body>
+</html>

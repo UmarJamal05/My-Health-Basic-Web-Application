@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Presentation Page</title>
+    <style>
+        body {
+			font-family: Arial, sans-serif;
+            background-image: url('../../images/background.jpg');
+            background-size: cover;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .member {
+            width: 90vw;
+            max-width: 180px;
+            height: 120vw;
+            max-height: 230px;
+            margin: 2vw;
+			border-radius: 10%;
+        }
+        #animated-text {
+			position: relative;
+			animation: slide-in 2s forwards;
+			font-size: 2em;
+		}
+
+		@keyframes slide-in {
+			0% {
+			left: -100%;
+			}
+		100% {
+			left: 0;
+			}
+		}
+        @media (max-width: 600px) {
+            .member {
+                width: 80vw;
+                height: 80vw;
+            }
+        }
+		.img-container p {
+			padding-left: 27%;
+			font-size: 2em;
+		}
+		#plain-text {
+			font-size: 4em;
+			padding-left: 8%;
+			color: red;
+		}
+		
+    </style>
+</head>
+<body>
+
+	
+    <div class="img-container">
+        <img class="member" src="../../images/Mevinu.jpg" alt="Member 1">
+        <p>Mevinu</p>
+    </div>
+    
+	<div class="img-container">
+        <img class="member" src="../../images/Chanidu.jpg" alt="Member 2">
+        <p>Chanidu</p>
+    </div>
+    
+	<div class="img-container">
+		<img class="member" src="../../images/Osal.jpg" alt="Member 3">
+		<p>Osal</p>
+	</div>
+    
+	<div class="img-container">
+        <img class="member" src="../../images/Umar.jpg" alt="Member 4">
+        <p>Umar</p>
+    </div>
+    <div id="plain-text"><b>My Health<b></div>
+	
+	<div id="animated-text"><b> - A Medical Care You Can Always Trust<b></div>
+    <script>
+        setTimeout(function(){
+            window.location.href = '../../Chanidu/HomePage/HomePage.html';
+        }, 5000);
+    </script>
+</body>
+</html>

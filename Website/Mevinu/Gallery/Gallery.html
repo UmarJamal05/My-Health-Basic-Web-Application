@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset = "UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Gallery Page</title>
+    <style>
+        body {
+			margin: 0%;
+			font-family: Arial, sans-serif;
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .img-container {
+			flex: 1 0 20%; 
+			margin-top: 10%;
+			margin-left: 3%;
+			margin-right: 3%;
+			margin-bottom: 3%;
+			text-align: center;
+			font-size: 1.2em;
+		}
+        .img-container img {
+            width: 100%;
+            cursor: pointer;
+			border-radius: 2%;
+        }
+        #enlarged {
+			display: none;
+			width: 70%; /* Adjust as needed */
+			margin: auto;
+			margin-bottom: 3%;
+		}
+		
+		#editor{
+			position: absolute;
+			top: 210%;
+			left: 1%;
+			text-decoration: none;
+			color: #3A5274;	
+		}
+		
+		@media (max-width: 600px) {
+			.img-container {
+				flex: 1 0 100%;
+			}
+			#enlarged {
+				width: 100%;
+			}
+		}
+		header{
+			position: fixed;
+			width: 100%;
+			z-index: 10;
+			box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+			margin-bottom: 1%;
+		}
+
+		.navbar ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #3A5274;
+					  
+		}
+
+		.navbar li {
+			float: left;
+		}
+
+		.navbar li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 32px;
+			text-decoration: none;
+			font-size: 20px;
+		}
+
+		li a:link{
+			 background-color: #3A5274;
+		}
+
+		li a:hover {
+			background-color: #4B6A96;
+		}
+
+		.pageTop h1{
+			height: 75px;
+			font-size: 55px;
+			color: #3A5274;
+			margin: 0;
+			
+		}
+
+		.pageTop{
+			background-color: white;
+			margin: 0;	
+		}
+
+		.pageTop img{
+			float: left;
+			width: 70px;
+			height: 70px;				
+			margin: 0;
+			vertical-align: top;
+		}
+		.detail1{
+			text-align: center;
+			width: 33.3%;
+			height: 150px;
+			float:left;
+		}
+
+		.detail2{
+			text-align: center;
+			width: 33.3%;
+			height: 150px;
+			float:right;
+		}
+
+		.detail3{
+			text-align: center;
+			width: 33.3%;
+			height: 150px;
+			float:right;
+		}
+			
+		footer{
+			height: 220px;
+			width: 100%;
+			background-color: #3A5274;
+			color: white;
+			margin: 0;
+		}
+		
+		.gallery a:link{
+				background-color: #4B6A96;
+			}
+			
+			
+		
+
+	
+    </style>
+</head>
+<body>
+	<header>
+			<div class = "pageTop">
+				<figure style = "margin: 0;">
+					<img src = "../../images/Logo.jpg" alt = "Page logo">
+				</figure>
+				<h1>My Health</h1>
+			</div>
+			<nav class = "navbar">
+				<ul>
+					<li class = "home"><a href = "../../Chanidu/HomePage/HomePage.html">Home</a></li>
+					<li class = "gallery"><a href = "#gallery">Gallery</a></li>
+					<li class = "shop"><a href = "../../Osal/Shop/Shop.html">Shop</a></li>
+					<li class = "comments"><a href = "../../Chanidu/CommentsPage/Feedback.html" >Comments</a></li>
+					<li class = "quiz"><a href ="../../Chanidu/Quiz Page/QuizPage.html">Quiz</a></li>
+					<li class = "reviews"><a href = "../../Umar/Review Page/ReviewPage.html">Reviews</a></li>
+					<li class = "aboutUs"><a href = "../../Osal/About Us/AboutUs.html">About Us</a></li>
+					<li class = "signUp" style = "float:right;"><a href = "../SignUp/Signup.html">Sign Up</a></li>
+				</ul>
+			</nav>
+		</header>
+    <div class="img-container">
+        <img src="../../images/Heartburn.webp" onclick="enlarge(this); scrollToBottom()" alt = "HeartBurn">
+        <p>Medication may ease your health issues, but sometimes, it can also trigger heartburn</p>
+    </div>
+    <div class="img-container">
+        <img src="../../images/Fruits.webp" onclick="enlarge(this); scrollToBottom()" alt = "Fruits">
+        <p>Eating more fruits, such as blueberries, citrus fruits, apples, and pomegranates, can improve the quality of your diet and may benefit your health in other ways as well, such as reducing your risk of common health conditions like heart disease and certain cancers.</p>
+    </div>
+    <div class="img-container">
+        <img src="../../images/Exercise.webp" onclick="enlarge(this); scrollToBottom()" alt = "Exercise">
+        <p>Strength training, sometimes called resistance training or weight training, is a type of exercise geared toward increasing your muscle strength, endurance, and sometimes even muscle mass.</p>
+    </div>
+    <div class="img-container">
+        <img src="../../images/Anxiety.webp" onclick="enlarge(this); scrollToBottom()" alt = "Anxiety">
+        <p>Everyone experiences anxiety at some point in their lives.</p>
+    </div>
+    <div class="img-container">
+        <img src="../../images/Dental.webp" onclick="enlarge(this); scrollToBottom()" alt = "Dental Clinic">
+        <p>The benefits of getting your teeth cleaned go beyond dental care. Regular cleanings also appear to help prevent more significant and costly health challenges for those with diabetes and coronary artery disease.</p>
+    </div>
+    <img id="enlarged" alt = "Space">
+	<a id = "editor" href = "../Mevinu Page editor/PageEditor.html" target = "_blank">Page editor</a>
+	<footer>	
+			<br>
+			<div class = "detail1">
+				<h2>Who we are</h2>
+				<p>About</p>
+				<p>Team</p>
+			</div>
+			<div class = "detail2">
+				<h2>Support</h2>
+				<p>Contact Us</p>
+			</div>
+			<div class = "detail3">
+				<h2>Community</h2>
+				<p>Ideas</p>
+			</div>
+			
+			<p style = "text-align: center;">&copy; 2024 MyHealth.com. All rights reserved.</p>
+			<p id = "bottom" ></p>
+		</footer>
+
+   <script>
+        function enlarge(img) {
+            var enlarged = document.getElementById('enlarged');
+            enlarged.src = img.src;
+            enlarged.style.display = 'block';
+        }
+		function scrollToBottom() {
+			var bottom = document.getElementById('enlarged');
+			bottom.scrollIntoView();
+		}
+	</script>	
+</body>
+</html>

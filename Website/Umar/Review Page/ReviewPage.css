@@ -1,0 +1,313 @@
+body{
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+	margin-bottom: 1%;
+}
+
+.navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #3A5274;
+			  
+}
+
+.navbar li {
+	float: left;
+}
+
+.navbar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 32px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+li a:link{
+	 background-color: #3A5274;
+}
+
+li a:hover {
+	background-color: #4B6A96;
+}
+
+.pageTop h1{
+	height: 75px;
+	font-size: 55px;
+	color: #3A5274;
+	margin: 0;
+	
+}
+
+.pageTop{
+	background-color: white;
+	margin: 0;	
+}
+
+img{
+	float: left;
+	width: 70px;
+	height: 70px;				
+	margin: 0;
+	vertical-align: top;
+}
+			
+.page{
+	margin: 20px;
+}
+			
+.page #dropdown {
+	text-align: right;
+}
+
+.page #dropdown label {
+	margin-left: 10px;
+}
+
+.page #dropdown select {
+	padding: 5px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-left: 10px;
+}
+
+.page #reset-button {
+	padding: 8px 16px;
+	font-size: 16px;
+	border: none;
+	border-radius: 8px;
+	background-color: #3A5274;
+	color: white;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.page #reset-button:hover {
+	background-color: #4B6A96;
+}
+
+hr {
+	position: relative;
+	top: 30px;
+	border: none;
+	height: 10px;
+	background: black;
+	margin-bottom: 50px;
+}
+
+.checked {
+	color: orange;
+}
+
+input {
+	width: 80vw;
+	height: 60px;
+	padding: 0 1.25rem;
+}
+
+input,
+input::placeholder {
+	font: 1.25rem/3 sans-serif;
+}
+
+.review-details {
+    display: flex;
+    align-items: center;
+}
+
+.review-details img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+.review-details .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-details .info h2 {
+    margin: 0;
+}
+
+.review-details .info > div {
+    margin: 5px 0;
+}
+
+.review p {
+    margin-top: 10px;
+}
+
+.Section1 {
+	float:left;
+	width:50%;
+	margin-left: 15px;
+}
+
+.Section2{
+	margin-top: 100px;
+	height:650px;
+}
+
+.Section2 img{
+	border-radius: 25px;
+	float:right;
+	width:35%;
+	height:600px;
+	margin-right:60px;
+	margin-bottom:10px;
+}
+
+#review{
+	width: 1100px;
+	border-radius: 15px;
+}
+
+#submit{
+	float:right;
+	width:15vw;
+	height: 60px;
+	padding: 0 1.25rem;
+	background-color: #3A5274;
+	color: white;
+	border-radius:12px;
+}
+
+#overlay{
+	z-index: 998;
+	width: 100%;
+	height: 100%;
+	padding: 100%;
+	background: rgba(168, 168, 168, 0.9);
+	display: none;
+	position:fixed;
+	left: 0%;
+	top: 0%;
+}
+
+#news{
+	margin-left: 7%;
+}
+
+.custom-button {
+	background-color: #3A5274;
+	color: white;
+	border-radius:8px;
+}
+
+.popup{
+	width: 60%;
+	position: absolute;
+	top: 90%;
+	left:20%;
+	font-size: 16px;
+	text-transform: uppercase;
+	z-index: 999;
+}
+
+#form1 {
+	padding: 30px;
+	border: 2px solid #ddd;
+    border-color: #628BC4;
+	background-color: #f5f5f5;
+	border-radius: 20px;
+}
+
+.popup h1{
+	color: black;
+	text-align: center;
+	margin-bottom: 10%;
+	margin-top:10px;
+	font-size: 30px;
+}
+
+.popup label {
+	text-align: center;
+	font-size: 16px;
+	color: black;
+	display: block;
+	font-family: 'sans-serif';
+}
+
+.popup input, textarea{
+	width: 100%;
+	padding: 0px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	font-size: 16px;
+}
+
+.close{
+	color: #3A5274;
+	font-size: 50px;
+}
+
+.button{
+	background-color: #3A5274;
+    hover: #628BC4;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.popup {
+	display: none;
+}
+
+.reviews #submit:hover {
+	background-color: #4B6A96;
+}
+
+.newsletter #news:hover {
+	background-color: #4B6A96;
+}
+
+.detail1{
+	text-align: center;
+	width: 33.3%;
+	height: 150px;
+	float:left;
+}
+
+.detail2{
+	text-align: center;
+	width: 33.3%;
+	height: 150px;
+	float:right;
+}
+
+.detail3{
+	text-align: center;
+	width: 33.3%;
+	height: 150px;
+	float:right;
+}
+	
+footer{
+	height: 220px;
+	width: 100%;
+	background-color: #3A5274;
+	color: white;
+	margin: 0;
+}
+
+#editor{
+	text-decoration: none;
+	color: #4B6A96;
+	float: left;
+	margin-left: 10px;
+}

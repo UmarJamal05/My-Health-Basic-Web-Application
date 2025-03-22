@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href = "FeedbackStyle.css" rel = "StyleSheet">
+		<title>Comments Page</title>
+		
+		<style>
+			.comments a:link{
+				background-color: #4B6A96;
+			}
+		</style>
+
+	</head>
+	
+	<body>	
+		<header>
+			<div class = "pageTop">
+				<figure style = "margin: 0;">
+					<img src = "../../images/Logo.jpg" alt = "Page logo">
+				</figure>
+				<h1>My Health</h1>
+			</div>
+			<nav class = "navbar">
+				<ul>
+					<li class = "home"><a href = "../HomePage/HomePage.html">Home</a></li>
+					<li class = "gallery"><a href = "../../Mevinu/Gallery/Gallery.html">Gallery</a></li>
+					<li class = "shop"><a href = "../../Osal/Shop/Shop.html">Shop</a></li>
+					<li class = "comments"><a href ="#comments">Comments</a></li>
+					<li class = "quiz"><a href ="../Quiz Page/QuizPage.html">Quiz</a></li>
+					<li class = "reviews"><a href = "../../Umar/Review Page/ReviewPage.html">Reviews</a></li>
+					<li class = "aboutUs"><a href = "../../Osal/About Us/AboutUs.html">About Us</a></li>
+					<li class = "signUp" style = "float:right;"><a href = "../../Mevinu/SignUp/Signup.html">Sign Up</a></li>
+				</ul>
+			</nav>
+		</header>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class = "fullpage">
+		<div class = "formtop">
+			<br>
+			<h1>Share your feedback</h1>
+			<br>
+			<br>
+			<p> Thanks for sending us your ideas, issues, or appreciations. 
+			We can't respond individually, but we'll pass it onto the teams who
+			are working to help make Health.com better for everyone</p>
+		</div>
+		<br>
+			<form id="form1">
+				<label for = "fName">First Name</label>
+				<br>
+				<br>
+				<input type = "text" name = "fName" id = "fName">
+				<br>
+				<br>
+				<label for = "lName">Last Name</label>
+				<br>
+				<br>
+				<input type = "text" name = "lName" id = "lName">
+				<br>
+				<br>
+				<label for = "email">Email</label>
+				<br>
+				<br>
+				<input type = "text" name = "email" id = "email">
+				<br>
+				<br>
+				<br>
+				<br>
+				<label for = "theme" >What's your feedback about?</label>
+				<br>
+				<br>
+				<select name = "theme" id = "theme">
+					<option>User Interface (UI) and Navigation</option>
+					<option>Product Information</option>
+					<option>Checkout Process</option>
+					<option>Delivery and Packaging</option>
+					<option>Website Performance</option>
+					<option>Overall Experience</option>
+					<option>Suggestions for Improvement</option>
+					<option>Other</option>
+				</select>
+				<br>
+				<br>
+				<label for = "querydetail">Provide more details about the feedback.</label>
+				<br>
+				<br>
+				<textarea name = "queryText" id = "querydetail"> </textarea>
+				<br>
+				<br>
+				<br>
+				<div class = "buttons">
+					 <button type="submit" id = "submit">Submit</button>
+					 <button type="reset" id = "reset">Reset</button>
+				</div>
+				<br>
+				<br>
+			</form>
+		</div>
+		<a id = "editor" href = "../Chanidu Page editor/PageEditor.html" target = "_blank">Page editor</a>
+		<br>
+		
+		<div class = "popOverlay" id = "popOverlay"></div>
+		<div class = "popup" id = "popup">
+			<h1>Summary</h1>
+			<br>
+			<br>
+			<p id = "popName">Name:</p>
+			<br>
+			<br>
+			<p id = "popEmail">Email:</p>
+			<br>
+			<br>
+			<p id = "popSubject">Subject:</p>
+			<br>
+			<br>
+			<p id = "popDetails">Details:</p>
+			<br>
+			<input type="button" value = "OK" id = "popButton">
+		</div>		
+		
+		<footer>	
+			<br>
+			<div class = "detail1">
+				<h2>Who we are</h2>
+				<p>About</p>
+				<p>Team</p>
+			</div>
+			<div class = "detail2">
+				<h2>Support</h2>
+				<p>Contact Us</p>
+			</div>
+			<div class = "detail3">
+				<h2>Community</h2>
+				<p>Ideas</p>
+			</div>
+			
+			<p style = "text-align: center;">&copy; 2024 MyHealth.com. All rights reserved.</p>
+		</footer>
+		<script src = "Feedback.js"></script>
+	</body>
+	
+</html>
